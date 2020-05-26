@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+
+#title {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Roboto";
+  font-weight: 200;
+}
+
+#chart {
+  text-align: center;
+  width: 10000;
+  height: 500;
+  position: absolute;
+}
+
+#tooltip {
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  background: lightsteelblue;
+  box-shadow: 1px 1px 10px;
+  border-radius: 2px;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+rect {
+  background-color: black;
+}
+
+.bar:hover {
+  fill: #fff;
+}
