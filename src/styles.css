@@ -1,5 +1,12 @@
 body {
   font-family: sans-serif;
+  font: 10px sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  margin: 0;
 }
 
 #title {
@@ -9,28 +16,40 @@ body {
   font-weight: 200;
 }
 
-#chart {
-  text-align: center;
-  width: 10000;
-  height: 500;
-  position: absolute;
+#subtitle {
+  font-size: 1.8em;
+  font-family: "Roboto";
+  font-weight: 200;
+}
+
+#y-label {
+  font-size: 2em;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.graph {
+  display: block;
+  margin: auto;
+  background-color: white;
+}
+
+#legend {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 2px;
+  pointer-events: none;
+  opacity: 0.8;
 }
 
 #tooltip {
   width: 150px;
-  height: 40px;
+  height: auto;
   padding: 10px;
   background: lightsteelblue;
   box-shadow: 1px 1px 10px;
   border-radius: 2px;
   pointer-events: none;
   opacity: 0.8;
-}
-
-rect {
-  background-color: black;
-}
-
-.bar:hover {
-  fill: #fff;
 }
